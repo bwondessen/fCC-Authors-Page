@@ -20,6 +20,7 @@ const fetchMoreAuthors = () => {
     endingIndex += 8;
 
     displayAuthors(authorDataArr.slice(startingIndex, endingIndex));
+
 };
 
 const displayAuthors = (authors) => {
@@ -34,3 +35,5 @@ const displayAuthors = (authors) => {
   `;
     });
 };
+
+loadMoreBtn.addEventListener('click', fetchMoreAuthors);
